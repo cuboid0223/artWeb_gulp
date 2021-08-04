@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Check</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="wrap">
+        <h1>
+          <a class="logo" href="index.html"> EXHIBINECTION </a>
+        </h1>
+        <ul class="header__list">
+          <li class="header__listItem">
+            <a href="">Sign in</a>
+          </li>
+          <li class="header__listItem">
+            <a href="">Sign up</a>
+          </li>
+          <li class="header__listItem"></li>
+        </ul>
+        <button
+          class="cart"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <span class="material-icons"> confirmation_number </span>
+          <span class="count">3</span>
+        </button>
+      </div>
+    </header>
+    
+<div class="paySuccessPage mt-80">
+  <!-- navbar -->
+  <nav class="navbar">
+    <ul class="navbar__wrap">
+      <li><a href="">音樂</a></li>
+      <li><a href="">戲劇</a></li>
+      <li><a href="DesignPage.html">設計</a></li>
+      <li><a href="">藝術</a></li>
+      <li><a href="">美食</a></li>
+      <li><a href="">旅遊</a></li>
+      <li><a href="">電影</a></li>
+      <li><a href="">親子</a></li>
+      <li><a href="">期間限定</a></li>
+    </ul>
+  </nav>
+  <!-- main -->
+  <main class="paySuccessPage__wrap px-sm-15">
+    <img class="icon" src="./assets/images/check_circle_black_48dp (1).svg" alt="" />
+
+    <h3 class="paySuccessPage__title">完成訂購</h3>
+    <p class="yourCodeAre">您的展覽憑證代碼為：</p>
+    <p class="code">qr147352</p>
+    <p class="content">
+      恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~ 2020/10/31
+      於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。
+    </p>
+    <section class="paySuccessPage__buttonsBox">
+      <a
+        href="index.html"
+        class="btn btn-secondary-border"
+        id="btn-goBack"
+      >
+        繼續瀏覽
+      </a>
+      <a href="ExhibitionDetailPage.html" class="btn btn-primary-fill"> 看展去 </a>
+    </section>
+  </main>
+</div>
+
+
+    <!-- Cart List -->
+    <aside
+      class="cartListOffcanvas offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      data-bs-backdrop="false"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <header class="offcanvas-header">
+        <h5 class="offcanvas-title" id="exampleModalLabel">Cart List</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </header>
+      <!-- Cart List Main -->
+      <ul class="offcanvas-body">
+        <li class="listCard">
+          <span class="clear-icon material-icons"> clear </span>
+
+          <img
+            class="listCard__image"
+            src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="photo"
+          />
+          <div class="listCard__infoBox">
+            <div>
+              <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+              <p class="time">01 JUN — 31 OCT</p>
+              <p class="ticket-type font-lightgray">全票</p>
+            </div>
+
+            <p class="price">NT$350</p>
+          </div>
+          <div class="addAndRemove">
+            <a href="">
+              <span class="remove-icon material-icons"> remove </span>
+            </a>
+            <h3 class="count">01</h3>
+            <a href="">
+              <span class="add-icon material-icons"> add </span>
+            </a>
+          </div>
+        </li>
+        <li class="listCard">
+          <span class="clear-icon material-icons"> clear </span>
+
+          <img
+            class="listCard__image"
+            src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="photo"
+          />
+          <div class="listCard__infoBox">
+            <div>
+              <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+              <p class="time">01 JUN — 31 OCT</p>
+              <p class="ticket-type font-lightgray">全票</p>
+            </div>
+
+            <p class="price">NT$350</p>
+          </div>
+          <div class="addAndRemove">
+            <a href="">
+              <span class="remove-icon material-icons"> remove </span>
+            </a>
+            <h3 class="count">01</h3>
+            <a href="">
+              <span class="add-icon material-icons"> add </span>
+            </a>
+          </div>
+        </li>
+        <li class="listCard">
+          <span class="clear-icon material-icons"> clear </span>
+
+          <img
+            class="listCard__image"
+            src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="photo"
+          />
+          <div class="listCard__infoBox">
+            <div>
+              <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+              <p class="time">01 JUN — 31 OCT</p>
+              <p class="ticket-type font-lightgray">全票</p>
+            </div>
+
+            <p class="price">NT$350</p>
+          </div>
+          <div class="addAndRemove">
+            <a href="">
+              <span class="remove-icon material-icons"> remove </span>
+            </a>
+            <h3 class="count">01</h3>
+            <a href="">
+              <span class="add-icon material-icons"> add </span>
+            </a>
+          </div>
+        </li>
+        <li class="listCard">
+          <span class="clear-icon material-icons"> clear </span>
+
+          <img
+            class="listCard__image"
+            src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="photo"
+          />
+          <div class="listCard__infoBox">
+            <div>
+              <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+              <p class="time">01 JUN — 31 OCT</p>
+              <p class="ticket-type font-lightgray">全票</p>
+            </div>
+
+            <p class="price">NT$350</p>
+          </div>
+          <div class="addAndRemove">
+            <a href="">
+              <span class="remove-icon material-icons"> remove </span>
+            </a>
+            <h3 class="count">01</h3>
+            <a href="">
+              <span class="add-icon material-icons"> add </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <footer class="offcanvas-footer">
+        <div class="priceBox">
+          <p>小計</p>
+          <p class="price">NT$1050</p>
+        </div>
+        <a href="CheckPage.html"  class="btn btn-secondary-fill-reverse">
+          前往結帳
+        </a>
+      </footer>
+    </aside>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

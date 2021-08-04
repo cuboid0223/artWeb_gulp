@@ -1,9 +1,0 @@
-.payInfoBox {
-  width: 31%;
-  margin-bottom: 160px;
-  @include ipad {
-    width: 100%;
-    order: 1;
-    margin-bottom: 0;
-  }
-}
