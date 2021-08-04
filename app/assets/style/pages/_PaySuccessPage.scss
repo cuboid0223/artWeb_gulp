@@ -1,0 +1,45 @@
+.paySuccessPage {
+  &__wrap {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: $font-s;
+    font-weight: normal;
+    color: $secondary-color;
+  }
+
+  .yourCodeAre {
+    margin-bottom: 40px;
+  }
+
+  .code {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: $font-m;
+    color: $secondary-color;
+  }
+
+  .content {
+    margin-bottom: 96px;
+  }
+
+  &__buttonsBox {
+    display: flex;
+    .btn {
+      width: 50%;
+    }
+    .btn-primary-fill {
+      margin-left: 30px;
+    }
+  }
+}

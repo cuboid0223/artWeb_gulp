@@ -1,0 +1,42 @@
+.subscribeBox {
+  @include background-settings;
+  background-image: url("../images/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+  height: 400px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 36px;
+ 
+
+  .wrap {
+    width: 100%;
+  }
+  &__title {
+    font-size: $font-xl;
+    margin-bottom: 12px;
+    @include iphone {
+      font-size: $font-m;
+      margin-bottom: 22px;
+    }
+  }
+  &__inputBox {
+    display: flex;
+    align-items: center;
+  }
+  & input {
+    // width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+  }
+
+  .btn {
+    padding: 12px 52px;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    @include iphone{
+      padding: 12px 30px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+@mixin hide-scrollbar {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  .TheSelector ::-webkit-scrollbar {
+    display: none; //將滾軸移除，但功能還在
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin background-settings {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin cart-count {
+  position: absolute;
+  right: -10px;
+  top: -13px;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+@mixin btn-border($color, $text-color) {
+  border: 1px solid $color !important;
+  color: $text-color !important;
+}
+
+@mixin btn-fill($color, $text-color) {
+  border: 1px solid $color;
+  color: $text-color !important;
+  background-color: $color !important;
+}
+
+@mixin btn-borderBottom($color, $text-color) {
+  border-bottom: 1px solid $color;
+  color: $text-color !important;
+  border-radius: unset;
+}

@@ -1,0 +1,37 @@
+.navbar {
+  border-bottom: 1px solid #707070;
+  border-top: 1px solid #707070;
+  padding: 0;
+  margin-bottom: 60px;
+  @include ipad {
+    margin-bottom: 20px;
+  }
+  &__wrap {
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none; //將滾軸移除，但功能還在
+    }
+    // & > li {
+    //   padding-bottom: 10px;
+    // }
+
+    & > li > a {
+      text-align: center;
+      padding: 14px 14px 10px;
+      margin-bottom: 5px;
+
+      &:hover {
+        border-bottom: 1px solid $pink;
+      }
+      @include ipad {
+        width: 100px;
+        writing-mode: horizontal-tb;
+      }
+    }
+  }
+}

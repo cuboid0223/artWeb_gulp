@@ -1,0 +1,191 @@
+.exhibitionDetailPage {
+  &__topBox {
+    display: flex;
+    margin-bottom: 40px;
+    @include ipadPro {
+      flex-direction: column;
+    }
+  }
+  //  有圖片和介紹的部分 & 右邊的表單
+  &__introBox {
+    //margin-right: 30px;
+
+    &__image {
+      width: 540px;
+      height: 256px;
+      background-image: url(../../../assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg);
+      @include background-settings;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @include ipadPro {
+        width: 100%;
+      }
+    
+    }
+    &__time {
+      padding-right: 30px;
+      color: white;
+      font-weight: bold;
+      font-size: $font-s;
+      @include ipad {
+        display: none;
+      }
+    }
+    .timeOnPhone {
+      display: none;
+      @include ipad {
+        display: block;
+        font-family: Roboto;
+        font-weight: bold;
+      }
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+    }
+    .fb-icon {
+      margin-left: 8px;
+    }
+  }
+
+  &__introduceContent {
+    max-width: 540px;
+  }
+
+  &__form {
+    margin-left: 30px;
+    @include ipad {
+      margin-left: 0;
+    }
+    & > .flex-box {
+      display: flex;
+      margin-bottom: 42px;
+
+      @include iphone {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+    }
+    .addAndRemoveBox {
+      width: 50%;
+      padding: 45px 26px 45px 30px;
+      @include ipad {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 43px;
+      }
+
+      .addAndRemove {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .count {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .material-icons {
+        padding: 40px;
+      }
+      .unit {
+        text-align: center;
+      }
+    }
+    .priceBox {
+      padding: 45px 30px 45px 26px;
+      width: 50%;
+      text-align: center;
+      border-left: 1px solid #707070;
+      @include ipad {
+        border: none;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 43px;
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 104px;
+      }
+    }
+    .buttonsBox {
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        padding: 10px 96px;
+        @include ipadPro {
+          width: 50%;
+          padding: 10px 50px;
+        }
+      }
+      .btn + .btn {
+        @include ipadPro {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  //  細節介紹與圖片
+  &__detailBox {
+    margin-bottom: 60px;
+  }
+
+  &__contentAndImageBox {
+    display: flex;
+    flex-wrap: wrap;
+    & > .topImageOnDesktop {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 32px;
+      @include iphone {
+        order: 2;
+      }
+    }
+
+    & > .leftImageOnDesktop {
+      width: 350px;
+      height: 559px;
+      object-fit: cover;
+      @include ipadPro {
+        order: 3;
+        width: 35vw;
+      }
+      @include ipad {
+        width: 100%;
+      }
+    }
+
+    & > .contentBox {
+      width: 65vw;
+      margin-left: 30px;
+      @include ipadPro {
+        margin-left: 0px;
+      }
+      @include ipad {
+        width: 100%;
+        order: 1;
+      }
+      & > h3 {
+        font-size: $font-s;
+        font-weight: 900;
+        margin-bottom: 4px;
+      }
+      .titleEng {
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: $font-s;
+        line-height: 1.5;
+      }
+
+      & > p {
+        color: #707070;
+        margin-bottom: 16px;
+        text-indent: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.progressBar {
+  margin: 20px 0 28px;
+  width: 65%;
+  @include ipad {
+    width: 100%;
+
+  }
+  & > ul {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid $primary-color;
+  }
+  li {
+    padding-top: 8px;
+    width: 25%;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    @include iphone {
+      font-size: 12px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 9px;
+      border: 1px solid $primary-color;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      z-index: 2;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+    &:after {
+      background-color: $primary-color;
+    }
+  }
+}

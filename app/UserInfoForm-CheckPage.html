@@ -1,0 +1,133 @@
+---
+title: Check
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="checkPage wrap px-sm-15 mt-80">
+  <section class="progressBar">
+    <ul>
+      <li class="active">確認訂單</li>
+      <li class="active">填寫訂購資訊</li>
+      <li>填寫付款資訊</li>
+      <li>完成訂購</li>
+    </ul>
+  </section>
+  <main>
+    <!-- card list -->
+    <ul class="cartListBox">
+      <li class="listCard">
+        <img
+          class="listCard__image"
+          src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+          alt="photo"
+        />
+        <div class="listCard__infoBox">
+          <div>
+            <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+            <p class="time">01 JUN — 31 OCT</p>
+            <div class="d-flex align-items-center">
+              <p class="ticket-type font-lightgray">全票</p>
+              <p class="count countOnPhone">1</p>
+            </div>
+          </div>
+
+          <p class="price">NT$350</p>
+          <p class="count countOnDesktop">1</p>
+        </div>
+      </li>
+      <li class="listCard">
+        <img
+          class="listCard__image"
+          src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+          alt="photo"
+        />
+        <div class="listCard__infoBox">
+          <div>
+            <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+            <p class="time">01 JUN — 31 OCT</p>
+            <div class="d-flex align-items-center">
+              <p class="ticket-type font-lightgray">全票</p>
+              <p class="count countOnPhone">1</p>
+            </div>
+          </div>
+
+          <p class="price">NT$350</p>
+          <p class="count countOnDesktop">1</p>
+        </div>
+      </li>
+      <li class="listCard">
+        <img
+          class="listCard__image"
+          src="./assets/images/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+          alt="photo"
+        />
+        <div class="listCard__infoBox">
+          <div>
+            <h4 class="listCard__infoBox__title">2020 台味設計展</h4>
+            <p class="time">01 JUN — 31 OCT</p>
+            <div class="d-flex align-items-center">
+              <p class="ticket-type font-lightgray">全票</p>
+              <p class="count countOnPhone">1</p>
+            </div>
+          </div>
+
+          <p class="price">NT$350</p>
+          <p class="count countOnDesktop">1</p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- 訂購人資訊 表單 -->
+    <div class="userInfoBox">
+      <form class="form card card-body">
+        <h2 class="form__title">訂購人資訊</h2>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@gmail.com" />
+        <label for="name">姓名</label>
+        <input type="text" id="name" placeholder="請輸入姓名" />
+        <label for="phone">聯絡電話</label>
+        <input type="text" placeholder="請輸入電話" />
+        <label for="phone">優惠碼</label>
+        <input type="text" placeholder="TG87526" />
+        <p class="coupon">優惠碼已生效</p>
+      </form>
+    </div>
+
+    <!--總金額那個區塊 -->
+    <section class="totalPriceBox">
+      <ul>
+        <li>
+          <p>小計</p>
+          <p>NT$1050</p>
+        </li>
+        <li>
+          <p>折扣</p>
+          <p>-NT$50</p>
+        </li>
+        <li>
+          <p class="fw-bold fs-small">總金額</p>
+          <p class="fw-bold fs-small">NT$1000</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- 按鈕區 -->
+
+  <section class="checkPage__buttonsBox">
+    <a
+      href="CheckPage.html"
+      class="btn-goBack btn btn-secondary-border"
+      id="btn-goBack"
+    >
+      返回
+    </a>
+    <a
+      href="PayInfoForm-CheckPage.html"
+      class="btn-nextStep btn btn-primary-fill"
+    >
+      下一步
+    </a>
+  </section>
+</div>

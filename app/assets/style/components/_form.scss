@@ -1,0 +1,20 @@
+.form {
+  padding: 0;
+  border: unset;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: $font-s;
+    line-height: 1.5;
+  }
+
+  label {
+    margin-bottom: 4px;
+  }
+  input {
+    padding: 7px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+}

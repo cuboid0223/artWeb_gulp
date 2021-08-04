@@ -1,0 +1,62 @@
+.designPage {
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  &__cardItem {
+    padding: 80px 0;
+    @include iphone {
+      padding: 0;
+    }
+    & > .wrap {
+      display: flex;
+      @include ipadPro {
+        padding: 44px 15px;
+      }
+      @include iphone {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .infoBox {
+      max-width: 345px;
+      &__title {
+        margin-bottom: 24px;
+        font-size: 36px;
+        @include iphone {
+          font-size: $font-xl;
+        }
+      }
+    }
+
+    .image {
+      height: 285px;
+      object-fit: cover;
+      margin: 0 30px;
+      @include iphone {
+        height: 221px;
+        margin: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    .time {
+      font-weight: bold;
+      align-self: flex-end;
+    }
+    .time-on-phone {
+      margin-bottom: 8px;
+    }
+
+    &:nth-child(odd) {
+      background-color: $purple-pink;
+      color: white;
+    }
+    &:nth-child(even) {
+      color: $purple-pink;
+      & > .wrap {
+        justify-content: center;
+      }
+    }
+  }
+}

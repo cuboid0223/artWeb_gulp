@@ -1,0 +1,61 @@
+.cartListOffcanvas {
+  margin: 0;
+  margin-top: 80px;
+  width: 540px;
+  background-color: #190014;
+  color: #fff;
+  border: unset;
+  border-radius: unset;
+  padding: 32px;
+
+  @include ipad {
+    padding: 16px;
+    margin-top: 60px;
+  }
+
+  .offcanvas-header {
+    border-bottom: unset;
+    padding: 0;
+    margin-bottom: 12px;
+    .offcanvas-title {
+      font-weight: bold;
+      font-size: $font-xl;
+    }
+  }
+  .offcanvas-body {
+    padding: 0;
+    max-height: 560px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    &::-webkit-scrollbar {
+      width: 2px;
+      background-color: white;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+    }
+  }
+
+  .offcanvas-footer {
+    border-top: unset;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .priceBox {
+      display: flex;
+      font-size: $font-s;
+
+      .price {
+        margin-left: 24px;
+      }
+    }
+
+    .btn {
+      padding: 10px 27px;
+      font-weight: bold;
+    }
+  }
+}

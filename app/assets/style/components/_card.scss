@@ -1,0 +1,64 @@
+.listCard {
+  background-color: #fff;
+  padding: 28px 32px 24px 32px;
+  display: flex;
+  color: black;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  position: relative;
+  
+  @include iphone {
+   
+    padding: 36px 16px 16px 16px;
+  }
+  &__image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+  .clear-icon {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+  }
+
+  &__infoBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    & > div {
+      flex: 1;
+    }
+    &__title {
+      font-weight: bold;
+    }
+    .time {
+      font-family: Roboto, sans-serif;
+    }
+  }
+
+  .addAndRemove {
+    display: flex;
+    align-items: center;
+    @include iphone {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .count {
+      font-size: $font-s;
+    }
+    .remove-icon {
+      padding-right: 12px;
+      @include iphone {
+        padding-right: 0;
+      }
+    }
+    .add-icon {
+      padding-left: 12px;
+      @include iphone {
+        padding-left: 0;
+      }
+    }
+  }
+}
