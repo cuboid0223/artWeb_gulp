@@ -147,12 +147,11 @@
     }
 
     & > .leftImageOnDesktop {
-      width: 350px;
+      width: 32%;
       height: 559px;
       object-fit: cover;
       @include ipadPro {
         order: 3;
-        width: 35vw;
       }
       @include ipad {
         width: 100%;
@@ -160,7 +159,7 @@
     }
 
     & > .contentBox {
-      width: 65vw;
+      width: 65%;
       margin-left: 30px;
       @include ipadPro {
         margin-left: 0px;
