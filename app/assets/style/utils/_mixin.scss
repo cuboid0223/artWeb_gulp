@@ -36,19 +36,3 @@
   padding: 2px 8px;
 }
 
-@mixin btn-border($color, $text-color) {
-  border: 1px solid $color !important;
-  color: $text-color !important;
-}
-
-@mixin btn-fill($color, $text-color) {
-  border: 1px solid $color;
-  color: $text-color !important;
-  background-color: $color !important;
-}
-
-@mixin btn-borderBottom($color, $text-color) {
-  border-bottom: 1px solid $color;
-  color: $text-color !important;
-  border-radius: unset;
-}

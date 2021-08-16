@@ -1,30 +1,42 @@
 .btn {
   &:hover {
     color: unset;
-    opacity: .8;
+    opacity: 0.8;
   }
 }
 
 .btn-primary-fill {
-  @include btn-fill($primary-color, white);
+  border: 1px solid $primary;
+  color: white !important;
+  background-color: $primary !important;
 }
 
 .btn-white-border {
-  @include btn-border(white, white);
+  border: 1px solid white;
+  color: white !important;
+  // border-radius: unset;
 }
 
 .btn-secondary-fill {
-  @include btn-fill($secondary-color, white);
+  border: 1px solid $secondary;
+  color: white !important;
+  background-color: $secondary !important;
 }
 
 .btn-secondary-fill-reverse {
-  @include btn-fill(white, $secondary-color);
+  border: 1px solid white;
+  color: $secondary !important;
+  background-color: white !important;
 }
 
 .btn-secondary-border {
-  @include btn-border($secondary-color, $secondary-color);
+  border: 1px solid $secondary;
+  color: $secondary !important;
+ 
 }
 
 .btn-primary-borderBottom {
-  @include btn-borderBottom($primary-color, black);
+  border-bottom: 1px solid white;
+  color: $primary !important;
+  border-radius: unset;
 }

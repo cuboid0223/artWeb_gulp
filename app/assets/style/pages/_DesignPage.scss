@@ -54,9 +54,9 @@
     }
     &:nth-child(even) {
       color: $purple-pink;
-      & > .wrap {
-        justify-content: center;
-      }
+      // & > .wrap {
+      //   justify-content: center;
+      // }
     }
   }
 }

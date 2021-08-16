@@ -12,44 +12,24 @@
     align-items: flex-end;
   }
 
-  &__wrap {
-    width: 920px;
-    margin: 0 auto;
-    @include iphone {
-      margin-bottom: 80px;
+  .row {
+    margin-bottom: 80px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0px;
     }
-    @include ipad {
-      margin-left: 20px;
-    }
-
-    & > h2 {
-      font-size: $font-xl;
-      margin-bottom: 8px;
-    }
-    & > p {
-      font-family: "Roboto", sans-serif;
-      font-size: $font-s;
-      margin-bottom: 16px;
-    }
+  }
+  h2 {
+    font-size: $font-xl;
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: $font-s;
+    margin-bottom: 16px;
   }
 
   .btn-primary-fill {
-    padding: 10px 48px;
-
-    @include iphone {
-      padding: 10px 0;
-      width: calc(45vw - 30px);
-    }
-  }
-
-  .btn-white-border {
-    padding: 10px 48px;
-
-    margin-left: 8px;
-    @include iphone {
-      padding: 10px 0;
-      width: calc(45vw - 30px);
-    }
+    margin-right: 8px;
   }
 }
 
@@ -63,16 +43,18 @@
 }
 
 .hitoExhibitions {
-  &__card {
-    display: flex;
-    margin-bottom: 20px;
+  ul {
+    padding: 0;
+  }
+  .card {
     background-color: #efefef;
-    @include iphone {
-      flex-direction: column;
-      padding: 24px 15px;
+    padding: 24px 15px;
+    border: none;
+    @include media-breakpoint-up(sm) {
+      padding: 0;
     }
     .cardImage {
-      max-width: 350px;
+      // max-width: 350px;
       height: 350px;
       object-fit: cover;
       @include iphone {
@@ -98,7 +80,7 @@
       }
 
       &__title {
-        font-size: $font-s;
+        @include font-size($font-s);
         font-weight: bold;
         margin-bottom: 4px;
         display: flex;
@@ -193,7 +175,7 @@
     margin-bottom: 20px;
   }
   &__list {
-    padding-left: 95px;
+    // padding-left: 95px;
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -202,15 +184,16 @@
     }
 
     @include iphone {
-      padding-left: 0;
+      // padding-left: 0;
       flex-direction: column;
       overflow-x: hidden;
     }
   }
 
-  &__listItem {
+  .card {
     cursor: pointer;
     flex-shrink: 0;
+    border: none;
     @include iphone {
       margin-bottom: 16px;
     }
@@ -236,7 +219,7 @@
     }
   }
 
-  &__listItem + &__listItem {
+  .card + .card {
     margin-left: 30px;
     @include iphone {
       margin-left: 0;

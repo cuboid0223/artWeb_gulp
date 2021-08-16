@@ -10,10 +10,13 @@ body {
   color: $gray-900;
 }
 .wrap {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: 0 auto;
 }
-
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
 img {
   max-width: 100%; /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
   height: auto;
@@ -83,7 +86,11 @@ a {
 }
 
 .material-icons:hover {
-  color: $secondary-color;
+  color: $secondary;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
 }
 
 .px-sm-15 {
