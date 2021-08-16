@@ -19,8 +19,8 @@
     <!-- header -->
     <header class="header">
       <div class="wrap">
-        <h1>
-          <a class="logo" href="index.html"> EXHIBINECTION </a>
+        <h1 class="logo">
+          <a href="index.html"> EXHIBINECTION </a>
         </h1>
         <ul class="header__list">
           <li class="header__listItem">
@@ -45,6 +45,7 @@
     </header>
     
 <div class="checkPage wrap px-sm-15 mt-80">
+  <!-- 進度條 -->
   <section class="progressBar">
     <ul>
       <li class="active">確認訂單</li>
@@ -123,11 +124,15 @@
       <form class="form card card-body">
         <h2 class="form__title">付款資訊</h2>
         <label for="cardNumber">信用卡帳號</label>
-        <input type="text" id="cardNumber" placeholder="Xxxx-xxxx-xxxx-xxxx" />
+        <input
+          type="number"
+          id="cardNumber"
+          placeholder="Xxxx-xxxx-xxxx-xxxx"
+        />
         <label for="date">有效日期</label>
-        <input type="text" id="date" placeholder="(MM/YY)" />
+        <input type="date" id="date" placeholder="(MM/YY)" />
         <label for="phone">安全碼</label>
-        <input type="text" placeholder="***" />
+        <input type="number" placeholder="***" />
       </form>
     </div>
     <!--總金額那個區塊 -->
@@ -157,10 +162,7 @@
     >
       返回
     </a>
-    <a
-      href="PaySuccessPage.html"
-      class="btn-nextStep btn btn-primary-fill"
-    >
+    <a href="PaySuccessPage.html" class="btn-nextStep btn btn-primary-fill">
       下一步
     </a>
   </section>
@@ -301,7 +303,7 @@
           <p>小計</p>
           <p class="price">NT$1050</p>
         </div>
-        <a href="CheckPage.html"  class="btn btn-secondary-fill-reverse">
+        <a href="CheckPage.html" class="btn btn-secondary-fill-reverse">
           前往結帳
         </a>
       </footer>
